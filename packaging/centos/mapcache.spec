@@ -1,6 +1,6 @@
 Name:           mapcache
-Version:        1.1dev
-Release:        1%{?dist}
+Version:        1.6.1
+Release:        1.wxusa.%{?dist}
 Summary:        Caching server for WMS layers
 Group:          Development/Tools
 License:        MIT
