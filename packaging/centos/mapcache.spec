@@ -26,8 +26,8 @@ essential features (and more!) expected from a tile caching solution.
 %setup -q -n %{name}-%{version}
 
 %build
-cmake -DINSTALL_LIB_DIR=%{_libdir} \
-      -DCMAKE_INSTALL_PREFIX=%{_prefix} .
+%cmake -DCMAKE_INSTALL_LIBDIR=%{_libdir} \
+       -DCMAKE_INSTALL_PREFIX=%{_prefix} .
 make %{?_smp_mflags}
 
 %install
